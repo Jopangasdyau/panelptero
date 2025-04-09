@@ -87,7 +87,7 @@ Options.MyToggle:SetValue(false)
 
 local Slider = Tabs.Main:CreateSlider("Slider", {
     Title = "Slider",
-    Description = "Farhan's Dick",
+    Description = "JumpPower",
     Default = 2,
     Min = 0,
     Max = 10000,
@@ -101,6 +101,23 @@ local Slider = Tabs.Main:CreateSlider("Slider", {
 Slider:OnChanged(function(Value)
     print("Slider changed:", Value)
 end)
+
+local Slider = Tabs.Main:CreateSlider("Slider", {
+    Title = "Slider",
+    Description = "SpeedHack",
+    Default = 2,
+    Min = 0,
+    Max = 10000,
+    Rounding = 1,
+    Callback = function(Value)
+       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+        print("Slider was changed:", Value)
+    end
+})
+
+Slider:OnChanged(function(Value)
+    print("Slider changed:", Value)
+  end)
 
 Slider:SetValue(3)
 
