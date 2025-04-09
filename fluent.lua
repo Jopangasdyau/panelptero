@@ -40,7 +40,7 @@ local Paragraph = Tabs.Main:CreateParagraph("Paragraph", {
 
 print(Paragraph.Value)
 
-Paragraph:SetValue("This paragraph text is changed!")
+Paragraph:SetValue("Banana")
 
 print(Paragraph.Value)
 
@@ -52,12 +52,12 @@ Tabs.Main:CreateParagraph("Aligned Paragraph", {
 })
 
 Tabs.Main:CreateButton{
-    Title = "Button",
-    Description = "Very important button",
+    Title = "Boobs",
+    Description = "Dick",
     Callback = function()
         Window:Dialog{
             Title = "Title",
-            Content = "This is a dialog",
+            Content = "Dick",
             Buttons = {
                 {
                     Title = "Confirm",
