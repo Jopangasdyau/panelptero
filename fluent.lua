@@ -1,8 +1,8 @@
 local Library = loadstring(game:HttpGetAsync("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
  
 local Window = Library:CreateWindow{
-    Title = `Test`,
-    SubTitle = "Test",
+    Title = `FluentGG`,
+    SubTitle = "SpeedAndJump",
     TabWidth = 160,
     Size = UDim2.fromOffset(830, 525),
     Resize = true, -- Resize this ^ Size according to a 1920x1080 screen, good for mobile users but may look weird on some devices
@@ -28,7 +28,7 @@ local Options = Library.Options
 
 Library:Notify{
     Title = "Test Notif",
-    Content = "Banana Hub",
+    Content = "SpeedAndJumpHack",
     SubContent = "SubContent", -- Optional
     Duration = 5 -- Set to nil to make the notification not disappear
 }
@@ -52,8 +52,8 @@ Tabs.Main:CreateParagraph("Aligned Paragraph", {
 })
 
 Tabs.Main:CreateButton{
-    Title = "Boobs",
-    Description = "Dick",
+    Title = "Inf Yield Script",
+    Description = "Inf Yield",
     Callback = function()
         Window:Dialog{
             Title = "Title",
