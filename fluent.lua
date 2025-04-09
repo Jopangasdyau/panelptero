@@ -62,6 +62,7 @@ Tabs.Main:CreateButton{
                 {
                     Title = "Confirm",
                     Callback = function()
+                       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
                         print("Confirmed the dialog.")
                     end
                 },
