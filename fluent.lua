@@ -27,8 +27,8 @@ local Tabs = {
 local Options = Library.Options
 
 Library:Notify{
-    Title = "Notification",
-    Content = "This is a notification",
+    Title = "Test Notif",
+    Content = "Banana Hub",
     SubContent = "SubContent", -- Optional
     Duration = 5 -- Set to nil to make the notification not disappear
 }
