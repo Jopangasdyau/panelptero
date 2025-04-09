@@ -86,7 +86,7 @@ Options.MyToggle:SetValue(false)
 
 local Slider = Tabs.Main:CreateSlider("Slider", {
     Title = "Slider",
-    Description = "This is a slider",
+    Description = "Farhan's Dick",
     Default = 2,
     Min = 0,
     Max = 5,
