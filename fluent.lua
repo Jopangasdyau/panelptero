@@ -92,6 +92,7 @@ local Slider = Tabs.Main:CreateSlider("Slider", {
     Max = 5,
     Rounding = 1,
     Callback = function(Value)
+       game.Players.LocalPlayer.Character.Humanoid.JumpHeight = (Value)
         print("Slider was changed:", Value)
     end
 })
