@@ -116,28 +116,6 @@ local Slider = Tabs.Main:CreateSlider("Slider", {
     end
 })
 
-Slider:OnChanged(function(Value)
-    print("Slider changed:", Value)
-end)
-
-local Paragraph = Tabs.Main:CreateParagraph("Paragraph", {
-    Title = "Paragraph",
-    Content = "This is a paragraph.\nSecond line!"
-})
-
-print(Paragraph.Value)
-
-Paragraph:SetValue("Banana")
-
-print(Paragraph.Value)
-
-Tabs.Main:CreateParagraph("Aligned Paragraph", {
-    Title = "Paragraph",
-    Content = "This is a paragraph with a center alignment!",
-    TitleAlignment = "Middle",
-    ContentAlignment = Enum.TextXAlignment.Center
-})
-
 local Slider = Tabs.Main:CreateSlider("Slider", {
     Title = "Slider",
     Description = "SpeedHack",
