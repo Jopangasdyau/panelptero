@@ -106,7 +106,7 @@ Options.MyToggle:SetValue(false)
 local Slider = Tabs.Main:CreateSlider("Slider", {
     Title = "Slider",
     Description = "JumpPower",
-    Default = 2,
+    Default = 50,
     Min = 0,
     Max = 10000,
     Rounding = 1,
@@ -119,7 +119,7 @@ local Slider = Tabs.Main:CreateSlider("Slider", {
 local Slider = Tabs.Main:CreateSlider("Slider", {
     Title = "Slider",
     Description = "SpeedHack",
-    Default = 2,
+    Default = 16,
     Min = 0,
     Max = 10000,
     Rounding = 1,
