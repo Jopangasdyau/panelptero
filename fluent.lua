@@ -344,7 +344,7 @@ Tab:AddDropdown({
     Default = "One",
     Callback = function(selected)
         print("Selected:", selected)
-        if selected == "Four" then
+        if selected == "SanguineArt" then
             print("loadstring")
             -- You can also do loadstring("your code")() here if needed
         end
