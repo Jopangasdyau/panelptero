@@ -80,6 +80,34 @@ end)
 
 
 Tabs.Main:CreateButton{
+    Title = "Dex",
+    Description = "Work fine",
+    Callback = function()
+        Window:Dialog{
+            Title = "Title",
+            Content = "Dick",
+            Buttons = {
+                {
+                    Title = "Confirm",
+                    Callback = function()
+                       loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+                        print("Confirmed the dialog.")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled the dialog.")
+                    end
+                }
+            }
+        }
+    end
+}
+
+local Toggle = Tabs.Main:CreateToggle("MyToggle", {Title = "Toggle", Default = false })
+
+Tabs.Main:CreateButton{
     Title = "Inf Yield Script",
     Description = "Inf Yield",
     Callback = function()
@@ -104,26 +132,6 @@ Tabs.Main:CreateButton{
         }
     end
 }
-
-local Toggle = Tabs.Main:CreateToggle("MyToggle", {Title = "Toggle", Default = false })
-
-local Paragraph = Tabs.Main:CreateParagraph("Paragraph", {
-    Title = "Paragraph",
-    Content = "This is a paragraph.\nSecond line!"
-})
-
-print(Paragraph.Value)
-
-Paragraph:SetValue("Banana")
-
-print(Paragraph.Value)
-
-Tabs.Main:CreateParagraph("Aligned Paragraph", {
-    Title = "Paragraph",
-    Content = "This is a paragraph with a center alignment!",
-    TitleAlignment = "Middle",
-    ContentAlignment = Enum.TextXAlignment.Center
-})
 
 Toggle:OnChanged(function()
     print("Toggle changed:", Options.MyToggle.Value)
