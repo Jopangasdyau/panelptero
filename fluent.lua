@@ -235,7 +235,7 @@ Tabs.Main:CreateButton{
 
 Tabs.Main:CreateButton{
     Title = "Small Server",
-    Description = "Might not work",
+    Description = "Work",
     Callback = function()
         local HttpService = game:GetService("HttpService")
         local TeleportService = game:GetService("TeleportService")
@@ -279,7 +279,7 @@ Tabs.Main:CreateButton{
 
 Tabs.Main:CreateButton{
     Title = "Rejoin Server",
-    Description = "Might not work",
+    Description = "Work",
     Callback = function()
         local TeleportService = game:GetService("TeleportService")
         local Players = game:GetService("Players")
