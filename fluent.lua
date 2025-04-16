@@ -54,22 +54,30 @@ Library:Notify{
 }
 
 local Paragraph = Tabs.Main:CreateParagraph("Paragraph", {
-    Title = "Paragraph",
-    Content = "This is a paragraph.\nSecond line!"
+    Title = "Client Time",  -- The title of the paragraph
+    Content = "0h:0m:0s"    -- Initial content, starting at 0 hours, 0 minutes, 0 seconds
 })
 
-print(Paragraph.Value)
+-- Function to update the time dynamically like a clock
+task.spawn(function()
+    local startTime = tick()  -- Get the current time in seconds since the game started
 
-Paragraph:SetValue("Banana")
+    while true do
+        local elapsed = tick() - startTime  -- Calculate the time elapsed since start
+        local hours = math.floor(elapsed / 3600)  -- Get hours
+        local minutes = math.floor((elapsed % 3600) / 60)  -- Get minutes
+        local seconds = math.floor(elapsed % 60)  -- Get seconds
 
-print(Paragraph.Value)
+        -- Format the time as "Xh:Xm:Xs"
+        local formattedTime = string.format("%dh:%dm:%ds", hours, minutes, seconds)
 
-Tabs.Main:CreateParagraph("Aligned Paragraph", {
-    Title = "Paragraph",
-    Content = "This is a paragraph with a center alignment!",
-    TitleAlignment = "Middle",
-    ContentAlignment = Enum.TextXAlignment.Center
-})
+        -- Update the content of the paragraph
+        Paragraph:SetValue(formattedTime)
+
+        wait(1)  -- Wait for 1 second before updating the time again
+    end
+end)
+
 
 Tabs.Main:CreateButton{
     Title = "Inf Yield Script",
