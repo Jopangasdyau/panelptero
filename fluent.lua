@@ -34,13 +34,6 @@
  
  local Options = Library.Options
  
- Library:Notify{
-     Title = "Test Notif",
-     Content = "SpeedAndJumpHack",
-     SubContent = "SubContent", -- Optional
-     Duration = 5 -- Set to nil to make the notification not disappear
- }
- 
  local Paragraph = Tabs.Main:CreateParagraph("Paragraph", {
      Title = "Client Time",  -- The title of the paragraph
      Content = "0h:0m:0s"    -- Initial content, starting at 0 hours, 0 minutes, 0 seconds
