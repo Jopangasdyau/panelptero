@@ -313,7 +313,7 @@
  
  local Tabs = {
      Main = Window:CreateTab{
-         Title = "Snipe",
+         Title = "Select Fighting Style",
          Icon = "nil"
      }
  }
@@ -324,10 +324,11 @@
         Multi = false,
         Default = 1,
         Callback = function(selected)
-         print("Selected:", selected)
-         if selected == "Four" then
-            print("loadstring")
-            -- You can also do loadstring("your code")() here if needed
-        end
-    end
+          print("Selected:", selected)
+          if selected == "Four" then
+           print("loadstring")
+        -- You can also do loadstring("your code")() here if needed
+         end
+     end
+ end
 })
