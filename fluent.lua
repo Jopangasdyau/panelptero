@@ -317,3 +317,17 @@
          Icon = "nil"
      }
  }
+
+ local Dropdown = Tabs.Main:AddDropdown("Dropdown", {
+        Title = "Dropdown",
+        Values = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen"},
+        Multi = false,
+        Default = 1,
+        Callback = function(selected)
+         print("Selected:", selected)
+         if selected == "Four" then
+            print("loadstring")
+            -- You can also do loadstring("your code")() here if needed
+        end
+    end
+})
