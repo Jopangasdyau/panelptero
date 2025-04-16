@@ -1,3 +1,23 @@
+local function callback(Text)
+ if Text == "Button1 text" then
+  print ("Answer")
+elseif Text == ("Button2 text") then
+ print ("Answer2")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "FluentGG";
+ Text = "Loading...";
+ Icon = "";
+ Duration = 100;
+ Button1 = "I Agree";
+ Callback = NotificationBindable;
+})
+
 local Library = loadstring(game:HttpGetAsync("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
  
 local Window = Library:CreateWindow{
