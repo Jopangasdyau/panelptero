@@ -13,7 +13,7 @@ game.StarterGui:SetCore("SendNotification",  {
  Title = "FluentGG";
  Text = "Loading...";
  Icon = "";
- Duration = 100;
+ Duration = 5;
  Button1 = "I Agree";
  Callback = NotificationBindable;
 })
