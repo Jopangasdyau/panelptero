@@ -336,3 +336,17 @@ local function callback(Text)
          Icon = "nil"
      }
  }
+
+Tab:AddDropdown({
+    Title = "Choose a number",
+    Values = { "GodHuman", "SuperHuman", "SharkManKarate", "SanguineArt" },
+    Multi = false,
+    Default = "One",
+    Callback = function(selected)
+        print("Selected:", selected)
+        if selected == "Four" then
+            print("loadstring")
+            -- You can also do loadstring("your code")() here if needed
+        end
+    end
+})
