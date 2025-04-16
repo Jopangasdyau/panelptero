@@ -105,8 +105,6 @@ Tabs.Main:CreateButton{
     end
 }
 
-local Toggle = Tabs.Main:CreateToggle("MyToggle", {Title = "Toggle", Default = false })
-
 Tabs.Main:CreateButton{
     Title = "Inf Yield Script",
     Description = "Inf Yield",
