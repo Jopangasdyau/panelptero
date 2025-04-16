@@ -33,25 +33,7 @@ local Window = Library:CreateWindow{
 }
 
 -- Fluent Renewed provides ALL 1544 Lucide 0.469.0 https://lucide.dev/icons/ Icons and ALL 9072 Phosphor 2.1.0 https://phosphoricons.com/ Icons for the tabs, icons are optional
-local Tabs = {
-    Main = Window:CreateTab{
-        Title = "Main",
-        Icon = "phosphor-users-bold"
-    },
-    Settings = Window:CreateTab{
-        Title = "Settings",
-        Icon = "settings"
-    }
-}
-
 local Options = Library.Options
-
-Library:Notify{
-    Title = "Test Notif",
-    Content = "SpeedAndJumpHack",
-    SubContent = "SubContent", -- Optional
-    Duration = 5 -- Set to nil to make the notification not disappear
-}
 
 local Paragraph = Tabs.Main:CreateParagraph("Paragraph", {
     Title = "Client Time",  -- The title of the paragraph
